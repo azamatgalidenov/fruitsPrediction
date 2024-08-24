@@ -49,12 +49,12 @@ How accurately can we classify different fruits based on their physical attribut
      - Data Description: Statistical description of numerical data to understand distributions and central tendencies.
 
 4. **Outliers Identification**
-   - **Method**: Used a boxplot method to identify and remove outliers from the 'weight' column.
-   - **Process**:
-     - **Calculate Quartiles**: Determine the first quartile (Q1) and third quartile (Q3) for the 'weight' column. These quartiles divide the data into four equal parts.
-     - **Compute Interquartile Range (IQR)**: The IQR is calculated as the difference between Q3 and Q1. It measures the range within which the central 50% of the data falls.
-     - **Determine Bounds**: Calculate the lower and upper bounds for acceptable data values. Any data points below the lower bound or above the upper bound are considered outliers.
-     - **Filter Data**: Create a filtered dataset that only includes values within the determined bounds, effectively removing the outliers.
+    **Method**: Used a boxplot method to identify and remove outliers from the 'weight' column.
+    **Process**:
+     - Calculate Quartiles: Determine the first quartile (Q1) and third quartile (Q3) for the 'weight' column. These quartiles divide the data into four equal parts.
+     - Compute Interquartile Range (IQR): The IQR is calculated as the difference between Q3 and Q1. It measures the range within which the central 50% of the data falls.
+     - Determine Bounds: Calculate the lower and upper bounds for acceptable data values. Any data points below the lower bound or above the upper bound are considered outliers.
+     - Filter Data: Create a filtered dataset that only includes values within the determined bounds, effectively removing the outliers.
      
      ```python
      Q1 = data['weight'].quantile(0.25)
@@ -66,15 +66,22 @@ How accurately can we classify different fruits based on their physical attribut
 
      data_filtered = data[(data['weight'] >= lower_bound) & (data['weight'] <= upper_bound)]
      ```
-   - **Boxplot Visualization**: Below is a boxplot visualization used to identify outliers in the 'weight' column.
+   - Boxplot Visualization: Below is a boxplot visualization used to identify outliers in the 'weight' column.
         ![Boxplot](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/boxplot.png)
+2. **Feature Analysis**
+    **Pair Plot Analysis**: 
+     - Analyzed the pair plot of attributes and identified a relationship between `weight` and `color`.
+     - Pair Plot Visualization:
+       ![Pair Plot](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/pair_plot.png)
+     - Weight vs. Color Visualization:
+       ![Weight vs. Color](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/weights_vs_color.png)
 
+    **Feature Interaction for Logistic Regression**:
+     - Implemented feature interaction of `weight` and `color`, which significantly improved the model's accuracy from 0.6700 to 0.7750.
 5. **Model Building**
    - Models Used:
      - **Decision Tree Classifier**: Implemented with a focus on optimizing depth and features.
      - **Logistic Regression**: Applied with a grid search for hyperparameter tuning.
-   - Feature Interaction for Logistic Regression:
-     - Implemented feature interaction of weight and color, which significantly improved the model's accuracy from 0.6700 to 0.7750.
    - Hyperparameter Tuning:
      - Used `GridSearchCV` to find the best parameters for each model.
      - **Decision Tree Classifier Hyperparameters**:
