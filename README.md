@@ -34,6 +34,8 @@ How accurately can we classify different fruits based on their physical attribut
      - `color`: 9 unique colors
      - `size`: 5 unique sizes
      - `weight`: 81 unique weights
+   - **Missing Values**:
+     - None
 
 2. **Data Preprocessing**
      - Dataset: The dataset contains various features of fruits such as size, color, and weight.
