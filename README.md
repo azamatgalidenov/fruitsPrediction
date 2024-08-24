@@ -61,8 +61,8 @@ Libriries used:
      - Train-Test Split: The dataset was split into training and testing sets using `train_test_split` in 80/20 proportion.
 
 3. **Outliers Identification**
-    **Method**: Used a boxplot method to identify and remove outliers from the 'weight' column.
-    **Process**:
+   - **Method**: Used a boxplot method to identify and remove outliers from the 'weight' column.
+   - **Process**:
      - Calculate Quartiles: Determine the first quartile (Q1) and third quartile (Q3) for the 'weight' column. These quartiles divide the data into four equal parts.
      - Compute Interquartile Range (IQR): The IQR is calculated as the difference between Q3 and Q1. It measures the range within which the central 50% of the data falls.
      - Determine Bounds: Calculate the lower and upper bounds for acceptable data values. Any data points below the lower bound or above the upper bound are considered outliers.
@@ -81,7 +81,7 @@ Libriries used:
    - Boxplot Visualization: Below is a boxplot visualization used to identify outliers in the 'weight' column.
         ![Boxplot](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/boxplot.png)
 4. **Feature Analysis**
-    **Pair Plot Analysis**: 
+   - **Pair Plot Analysis**: 
      - Analyzed the pair plot of attributes and identified a relationship between `weight` and `color`.
      - Pair Plot Visualization:
        ![Pair Plot](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/pair_plot.png)
@@ -91,13 +91,13 @@ Libriries used:
     **Feature Interaction for Logistic Regression**:
      - Implemented feature interaction of `weight` and `color` for logistic regression, which significantly improved the its accuracy from 0.6700 to 0.7750.
 5. **Model Building**
-   - Models Used:
+   - **Models Used**:
      - **Decision Tree Classifier**: Implemented with a focus on optimizing depth and features.
      - **Logistic Regression**: Applied with a grid search for hyperparameter tuning.
-   - Features Used:
+   - **Features Used**:
      - **Decision Tree Classifier**: `color_encoded`, `size_encoded`, `weight`.
      - **Logistic Regression**: `color_encoded`, `size_encoded`, `weight`, `Weight_Color_Interaction`.
-   - Hyperparameter Tuning:
+   - **Hyperparameter Tuning**:
      - Used `GridSearchCV` to find the best parameters for each model.
      - **Decision Tree Classifier Hyperparameters**:
         - `max_depth`: `None`
@@ -128,7 +128,7 @@ Libriries used:
         - ROC-AUC Score: 0.9004
 
 6. **Results**
-   - Models:
+   - **Models**:
      - **Optimized Decision Tree**: Provided a robust model with the best accuracy and F1 score.
      - **Optimized Logistic Regression**: Showed competitive performance with balanced precision and recall. Despite having lower accuracy and F1 score, Logistic Regression had a higher ROC-AUC score. The implementation of feature interaction in Logistic Regression improved accuracy from 0.6700 to 0.7750.
 
