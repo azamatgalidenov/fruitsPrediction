@@ -8,20 +8,45 @@ How accurately can we classify different fruits based on their physical attribut
 
 ## Methodology
 
-1. **Data Preprocessing**
-   - Dataset: The dataset contains various features of fruits such as size, color, and mass.
-   - Initial Setup: Imported libraries including `pandas`, `numpy`, `matplotlib`, `seaborn`, and several `sklearn` modules.
-   - Data Loading: The dataset was loaded using `pandas.read_excel`.
-   - Data Cleaning: Unnecessary columns were dropped, and categories with similar values were merged (e.g., `Largee` with `Large` and `Yellow1` with `Yellow`).
-   - Feature Encoding: Categorical data was encoded using `LabelEncoder`.
-   - Train-Test Split: The dataset was split into training and testing sets using `train_test_split` in 80/20 proportion.
+1. **Data Description**
+   - **Dataset**: The dataset contains information about various fruits, including their type, color, size, and weight.
+   - **Columns**:
+     - `fruit_type`: The type of fruit. Includes categories such as 'Banana', 'Apple', and 'Grape'.
+     - `color`: The color of the fruit. Categories include 'Yellow', 'Pink', 'Pale Yellow', 'Red', 'Creamy White', 'Green', 'Purple', and 'Black'.
+     - `size`: The size category of the fruit. Options are 'Tiny', 'Large', 'Small', and 'Medium'.
+     - `weight`: The weight of the fruit.
+   - **Attributes**:
+     - **Sizes**: The dataset categorizes fruit sizes into 'Tiny', 'Large', 'Small', and 'Medium'.
+     - **Colors**: The dataset includes various colors such as 'Yellow', 'Pink', 'Pale Yellow', 'Red', 'Creamy White', 'Green', 'Purple', and 'Black'.
+     - **Weight**: The weight of the fruit is summarized with the following statistics:
+       - **Count**: 200
+       - **Mean**: 59.05 grams
+       - **Standard Deviation**: 46.70 grams
+       - **Minimum**: 1 gram
+       - **25th Percentile (Q1)**: 8.14 grams
+       - **Median (50th Percentile)**: 63.11 grams
+       - **75th Percentile (Q3)**: 94.37 grams
+       - **Maximum**: 250 grams
+   - **Unique Values**:
+     - `fruit_type`: 3 unique types ('Banana', 'Apple', 'Grape')
+     - `color`: 9 unique colors
+     - `size`: 5 unique sizes
+     - `weight`: 81 unique weights
 
-2. **Exploratory Data Analysis (EDA)**
-   - Data Shape & Structure: Basic exploration to understand the size and structure of the dataset.
-   - Missing Values: Checked for missing values to ensure data completeness.
-   - Data Description: Statistical description of numerical data to understand distributions and central tendencies.
+2. **Data Preprocessing**
+     - Dataset: The dataset contains various features of fruits such as size, color, and weight.
+     - Initial Setup: Imported libraries including `pandas`, `numpy`, `matplotlib`, `seaborn`, and several `sklearn` modules.
+     - Data Loading: The dataset was loaded using `pandas.read_excel`.
+     - Data Cleaning: Unnecessary columns were dropped, and categories with similar values were merged (e.g., `Largee` with `Large` and `Yellow1` with `Yellow`).
+     - Feature Encoding: Categorical data was encoded using `LabelEncoder`.
+     - Train-Test Split: The dataset was split into training and testing sets using `train_test_split` in 80/20 proportion.
 
-3. **Outliers Identification**
+3. **Exploratory Data Analysis (EDA)**
+     - Data Shape & Structure: Basic exploration to understand the size and structure of the dataset.
+     - Missing Values: Checked for missing values to ensure data completeness.
+     - Data Description: Statistical description of numerical data to understand distributions and central tendencies.
+
+4. **Outliers Identification**
    - **Method**: Used a boxplot method to identify and remove outliers from the 'weight' column.
    - **Process**:
      - **Calculate Quartiles**: Determine the first quartile (Q1) and third quartile (Q3) for the 'weight' column. These quartiles divide the data into four equal parts.
@@ -42,7 +67,7 @@ How accurately can we classify different fruits based on their physical attribut
    - **Boxplot Visualization**: Below is a boxplot visualization used to identify outliers in the 'weight' column.
         ![Boxplot](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/boxplot.png)
 
-3. **Model Building**
+5. **Model Building**
    - Models Used:
      - **Decision Tree Classifier**: Implemented with a focus on optimizing depth and features.
      - **Logistic Regression**: Applied with a grid search for hyperparameter tuning.
@@ -78,7 +103,7 @@ How accurately can we classify different fruits based on their physical attribut
         - F1 Score: 0.7760
         - ROC-AUC Score: 0.9004
 
-4. **Results**
+6. **Results**
    - Best Models:
      - **Optimized Decision Tree**: Provided a robust model with the best accuracy and F1 score.
      - **Optimized Logistic Regression**: Showed competitive performance with balanced precision and recall. The implementation of feature interaction in Logistic Regression improved accuracy from 0.6700 to 0.7750.
