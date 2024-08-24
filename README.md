@@ -43,12 +43,7 @@ How accurately can we classify different fruits based on their physical attribut
      - Feature Encoding: Categorical data was encoded using `LabelEncoder`.
      - Train-Test Split: The dataset was split into training and testing sets using `train_test_split` in 80/20 proportion.
 
-3. **Exploratory Data Analysis (EDA)**
-     - Data Shape & Structure: Basic exploration to understand the size and structure of the dataset.
-     - Missing Values: Checked for missing values to ensure data completeness.
-     - Data Description: Statistical description of numerical data to understand distributions and central tendencies.
-
-4. **Outliers Identification**
+3. **Outliers Identification**
     **Method**: Used a boxplot method to identify and remove outliers from the 'weight' column.
     **Process**:
      - Calculate Quartiles: Determine the first quartile (Q1) and third quartile (Q3) for the 'weight' column. These quartiles divide the data into four equal parts.
@@ -68,7 +63,7 @@ How accurately can we classify different fruits based on their physical attribut
      ```
    - Boxplot Visualization: Below is a boxplot visualization used to identify outliers in the 'weight' column.
         ![Boxplot](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/boxplot.png)
-2. **Feature Analysis**
+4. **Feature Analysis**
     **Pair Plot Analysis**: 
      - Analyzed the pair plot of attributes and identified a relationship between `weight` and `color`.
      - Pair Plot Visualization:
