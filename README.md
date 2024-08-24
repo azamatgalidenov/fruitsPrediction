@@ -14,8 +14,8 @@ How accurately can we classify different fruits based on their physical attribut
    - **Dataset**: The dataset contains information about various fruits, including their type, color, size, and weight.
    - **Columns**:
      - `fruit_type`: The type of fruit. Includes categories such as 'Banana', 'Apple', and 'Grape'.
-     - `color`: The color of the fruit. Categories include 'Yellow', 'Pink', 'Pale Yellow', 'Red', 'Creamy White', 'Green', 'Purple', and 'Black'.
-     - `size`: The size category of the fruit. Options are 'Tiny', 'Large', 'Small', and 'Medium'.
+     - `color`: The color of the fruit. Categories include 'Yellow', 'Pink', 'Pale Yellow', 'Red', 'Creamy White', 'Green', 'Yellow1', 'Purple', and 'Black'.
+     - `size`: The size category of the fruit. Options are 'Tiny', 'Large', 'Largee', 'Small', and 'Medium'.
      - `weight`: The weight of the fruit.
    - **Attributes**:
      - **Sizes**: The dataset categorizes fruit sizes into 'Tiny', 'Large', 'Small', and 'Medium'.
