@@ -39,6 +39,8 @@ How accurately can we classify different fruits based on their physical attribut
 
      data_filtered = data[(data['weight'] >= lower_bound) & (data['weight'] <= upper_bound)]
      ```
+   - **Boxplot Visualization**: Below is a boxplot visualization used to identify outliers in the 'weight' column.
+        ![Boxplot](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/boxplot.png)
 
 3. **Model Building**
    - Models Used:
