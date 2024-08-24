@@ -2,6 +2,8 @@
 
 This project focuses on building predictive models to classify different types of fruits based on their physical attributes. The primary objective is to explore and implement machine learning techniques to accurately predict the type of fruit using the provided dataset.
 
+![Fruit Types](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/fruits_type.png)
+
 ## Research Question
 
 How accurately can we classify different fruits based on their physical attributes using machine learning models?
