@@ -89,7 +89,7 @@ Libriries used:
        ![Weight vs. Color](https://github.com/azamatgalidenov/fruitsPrediction/blob/main/img/weights_vs_color.png)
 
     **Feature Interaction for Logistic Regression**:
-     - Implemented feature interaction of `weight` and `color`, which significantly improved the model's accuracy from 0.6700 to 0.7750.
+     - Implemented feature interaction of `weight` and `color` for logistic regression, which significantly improved the its accuracy from 0.6700 to 0.7750.
 5. **Model Building**
    - Models Used:
      - **Decision Tree Classifier**: Implemented with a focus on optimizing depth and features.
