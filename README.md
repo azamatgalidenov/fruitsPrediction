@@ -7,15 +7,15 @@
 3. [Description](#description)
    - [Models Used](#models-used)
    - [Libraries Used](#libraries-used)
-   - [Methodology](#methodology)
+4. [Methodology](#methodology)
    - [Data Description](#data-description)
    - [Data Preprocessing](#data-preprocessing)
    - [Outliers Identification](#outliers-identification)
    - [Feature Analysis](#feature-analysis)
    - [Model Building](#model-building)
    - [Results](#results)
-4. [Results and Conclusions](#results-and-conclusions)
-5. [How to Use](#how-to-use)
+5. [Results and Conclusions](#results-and-conclusions)
+6. [How to Use](#how-to-use)
 
 ## Motivation
 
