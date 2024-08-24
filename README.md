@@ -1,5 +1,22 @@
 # Fruits Prediction Project
 
+## Table of Contents
+
+1. [Motivation](#motivation)
+2. [Research Question](#research-question)
+3. [Description](#description)
+   - [Models Used](#models-used)
+   - [Libraries Used](#libraries-used)
+4. [Methodology](#methodology)
+   - [Data Description](#data-description)
+   - [Data Preprocessing](#data-preprocessing)
+   - [Outliers Identification](#outliers-identification)
+   - [Feature Analysis](#feature-analysis)
+   - [Model Building](#model-building)
+5. [Results](#results)
+6. [Results and Conclusions](#results-and-conclusions)
+7. [How to Use](#how-to-use)
+
 ## Motivation
 
 This project focuses on building predictive models to classify different types of fruits based on their physical attributes. The primary objective is to explore and implement machine learning techniques to accurately predict the type of fruit using the provided dataset.
