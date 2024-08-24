@@ -94,6 +94,9 @@ Libriries used:
    - Models Used:
      - **Decision Tree Classifier**: Implemented with a focus on optimizing depth and features.
      - **Logistic Regression**: Applied with a grid search for hyperparameter tuning.
+   - Features Used:
+     - **Decision Tree Classifier**: `color_encoded`, `size_encoded`, `weight`.
+     - **Logistic Regression**: `color_encoded`, `size_encoded`, `weight`, `Weight_Color_Interaction`.
    - Hyperparameter Tuning:
      - Used `GridSearchCV` to find the best parameters for each model.
      - **Decision Tree Classifier Hyperparameters**:
