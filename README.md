@@ -1,6 +1,6 @@
 # Fruits Prediction Project
 
-## Description
+## Motivation
 
 This project focuses on building predictive models to classify different types of fruits based on their physical attributes. The primary objective is to explore and implement machine learning techniques to accurately predict the type of fruit using the provided dataset.
 
@@ -9,6 +9,18 @@ This project focuses on building predictive models to classify different types o
 ## Research Question
 
 How accurately can we classify different fruits based on their physical attributes using machine learning models?
+
+## Description
+
+Models used:
+- **Logistic Regression**
+- **Desicion Tree**
+Libriries used:
+- **pandas**
+- **numpy**
+- **matplotlib**
+- **seaborn**
+- **sklearn**
 
 ## Methodology
 
