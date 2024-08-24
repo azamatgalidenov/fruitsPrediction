@@ -15,6 +15,7 @@ How accurately can we classify different fruits based on their physical attribut
 Models used:
 - **Logistic Regression**
 - **Desicion Tree**
+
 Libriries used:
 - **pandas**
 - **numpy**
