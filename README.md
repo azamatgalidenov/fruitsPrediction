@@ -128,9 +128,9 @@ Libriries used:
         - ROC-AUC Score: 0.9004
 
 6. **Results**
-   - Best Models:
+   - Models:
      - **Optimized Decision Tree**: Provided a robust model with the best accuracy and F1 score.
-     - **Optimized Logistic Regression**: Showed competitive performance with balanced precision and recall. The implementation of feature interaction in Logistic Regression improved accuracy from 0.6700 to 0.7750.
+     - **Optimized Logistic Regression**: Showed competitive performance with balanced precision and recall. Despite having lower accuracy and F1 score, Logistic Regression had a higher ROC-AUC score. The implementation of feature interaction in Logistic Regression improved accuracy from 0.6700 to 0.7750.
 
 ## Results and Conclusions
 
