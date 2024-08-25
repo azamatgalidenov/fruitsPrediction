@@ -153,6 +153,8 @@ Libriries used:
 
 The project successfully demonstrated the ability to predict fruit types based on their physical characteristics. The Decision Tree Classifier, after hyperparameter tuning, emerged as the most accurate model. The use of logistic regression also provided insights into the linear separability of the data, although it was slightly less accurate than the Decision Tree model.
 
+Both models have difficulty distinguishing a banana from an apple, due to the small number of features. In the future, it is worth adding features such as the amount of fructose per gram per cm in a cube and etc, so that the model has better patterns.
+
 The implementation of feature interaction in Logistic Regression significantly improved its accuracy, highlighting the impact of feature engineering on model performance.
 
 The project emphasizes the importance of data preprocessing, feature engineering, and model selection in achieving accurate predictions. Further improvements could include exploring additional features or alternative machine learning models.
